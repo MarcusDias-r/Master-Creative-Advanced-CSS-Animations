@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.container img{
+    width: 400px;
+    display: block;
+    margin: auto;
+    transition: transform 2s;
+
+    /* Sets the origin point of the rotation*/
+
+        transform-origin: top right;
+
+        /* Examples: 
+
+            transform-origin: top;
+            transform-origin: left;
+            transform-origin: top right;
+            transform-origin: top left;
+
+        */
+}
+
+.container .by-percentage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(0, 4, 255);
+    color: white;
+    font-size: 20px;
+    transition: transform 2s;
+
+    /* Sets the origin point using the element percentage location*/
+        transform-origin: 20% 100%;
+
+    /* Can be used by pixels too */
+        /* transform-origin: 200px 10px; */
+}
+
+img:hover,
+.by-percentage:hover{
+
+    transform: rotate(45deg);
+}
