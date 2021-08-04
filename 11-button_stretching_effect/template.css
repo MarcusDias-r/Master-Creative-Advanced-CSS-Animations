@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: #E1332D;
+    font-size: 40px;
+    font-family: 'roboto';
+    font-weight: 300;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    
+    border: 3px solid #E1332D;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 0.5s;
+    /* overflow: hidden; */
+}
+
+a:hover{
+    
+    font-weight: 900;
+    letter-spacing: 10px;
+    border: 7px solid #E1332D;
+}
+

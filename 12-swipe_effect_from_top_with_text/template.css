@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    background-color:#222;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 40px;
+    font-family: 'roboto';
+    font-weight: 400;
+    border: 3px solid #ccc;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+a:before{
+    content: 'YEAH!';
+    color: #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F44336;
+    transform: translateY(-100%);
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover:before{
+    transform: translateY(0);
+}
+
