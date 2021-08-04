@@ -1,0 +1,86 @@
+.container{
+    width: 960px;
+}
+
+.move{
+    margin: 2em;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 20px;
+    transition-property:translate();
+    transition-duration:3s; /* time the animation will occur */
+}
+
+/* transition-timing-function => defines how the change in the property will occur*/
+
+#ease{  
+    transition-timing-function: ease; 
+    /* the change starts slow then go faster then finishes slow */
+}
+#linear{
+    transition-timing-function: linear;
+    /* the change occurs at the same rate*/
+}
+#ease-in{
+    transition-timing-function:ease-in;
+    /* the change starts slow then go faster before the end */
+}
+#ease-out{
+    transition-timing-function:ease-out;
+    /* the change starts fast then slows down before the end */
+}
+#ease-in-out{
+    transition-timing-function: ease-in-out;
+    /* the change starts slow then go faster then finishes slow */
+}
+
+.move:hover{
+    transform: translate(900px, 0);/* deslocamento 900px horizontalmente, 0px verticalmente */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.delay{
+    background-color: blueviolet;
+    width: 140px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 2em;
+    text-align: center;
+
+    /* Example 1 */
+                                
+    /* transition-property: all;  Here will be defined the properties that will go through the transition 
+       transition-duration: 3s; 
+       transition-timing-function: ease; 
+       transition-delay: 2s; */
+
+    /* Example 2 */
+
+    /* transition: background-color 3s ease-in-out 1s, 
+                   color 2s ease 4s,
+                   border-radius 4s ease-out 6s;*/  
+    
+    /* Example 3 */
+
+        transition: all 3s ease 2s; /* here we define all the transition properties in a unique line 1-transition-property 2-transition-duration 3-transition-timing-function 4-transition-delay*/
+}
+
+.delay:hover{
+    background-color: greenyellow;
+    color: indigo;
+    transition-delay: 2s; /* the animation will start only after 2 seconds  */
+    width: 600px;
+}
+
+/* continuar da aula 8 */
